@@ -1,0 +1,19 @@
+<h1>Jugadores</h1>
+<div class="container">
+  <div class="form-group">
+    <label>Nombre del Jugador</label>
+    <input type="text"
+           class="form-control"
+           name="nombre"
+           [(ngModel)]="nuevoEquipo.nombre"
+    >
+  </div>
+  <button class="btn btn-block btn-success" (click)="crearEquipo(nuevoEquipo.nombre)">Crear Equipo</button>
+
+  <div class="row">
+    <div class="col-sm-12" *ngFor="let jugador of jugadores">
+      <h1>{{jugador.nombre}}</h1>
+      <p>ID:{{jugador.id}}</p>
+    </div>
+  </div>
+</div>
