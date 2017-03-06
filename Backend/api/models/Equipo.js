@@ -9,8 +9,8 @@ module.exports = {
 
   attributes: {
     jugadores: {
-      collection: 'Jugador',
-      via: 'idEquipo'
+      collection: "Jugador",
+      via: "idEquipo"
     }
 
   }

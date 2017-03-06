@@ -1,10 +1,9 @@
-<h1>{{title}}</h1>
-<h2>{{error}}</h2>
 <div class="container">
+  <h1>{{title}}</h1>
   <div class="row">
     <div class="col-sm-12">
       <pre class="animated fadeInUp">
-        {{nuevoEquipo | json}}
+        {{ nuevoEquipo | json}}
       </pre>
     </div>
     <div class="col-sm-6">
@@ -12,7 +11,7 @@
         <div class="form-group">
           <label>Equipo</label>
           <div class="animated slideInUp" [hidden]="!nombre.errors">
-            <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre mínimo con 3 caracteres</span>
+            <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre y pais de  mínimo con 5 caracteres</span>
           </div>
           <input required
                  minlength="5"
@@ -24,6 +23,33 @@
                  #nombre="ngModel"
                  #nombreEle>
         </div>
+        <div class="form-group">
+          <label>Fecha de creación</label>
+          <input type="date"
+                 required
+                 name="fechaCreacion"
+                 class="form-control"
+                 [(ngModel)]="nuevoEquipo.fechaCreacion"
+                 #nombre="ngModel"
+                 #nombreEle
+          >
+        </div>
+        <div class="form-group">
+          <label>Pais de Residencia</label>
+          <!--<div class="animated slideInUp" [hidden]="!paisResidencia.errors">-->
+          <!--<span class="bg-primary " *ngIf="paisResidencia.errors && (paisResidencia.dirty || paisResidencia.touched)"> Ingrese un pais mínimo con 5 caracteres</span>-->
+          <!--</div>-->
+          <input type="text"
+                 name="paisResidencia"
+                 required
+                 minlength="5"
+                 placeholder="Ingrese el pais de residencia del Equipo como: España"
+                 class="form-control"
+                 [(ngModel)]="nuevoEquipo.paisResidencia"
+                 #nombre="ngModel"
+                 #nombreEle
+          >
+        </div>
         <button [disabled]="disabledButtons.NuevoEquipoFormSubmitButton ||!NuevoEquipoForm.valid" type="submit"
                 class="btn btn-block btn-success">Crear
         </button>
@@ -31,6 +57,8 @@
     </div>
     <div class="col-sm-6">
       <h1>{{nuevoEquipo.nombre}}</h1>
+      <h1>{{nuevoEquipo.fechaCreacion}}</h1>
+      <h1>{{nuevoEquipo.paisResidencia}}</h1>
     </div>
 
   </div>
@@ -39,6 +67,8 @@
       <div class="text-center">
         <h3>{{equipo.nombre}}</h3>
         <p>ID: {{equipo.id}}</p>
+        <p>Fecha de Creación: {{equipo.fechaCreacion}}</p>
+        <p>País de Residencia: {{equipo.paisResidencia}}</p>
       </div>
       <div class="row animated flipInY" [hidden]="!equipo.formularioCerrado">
         <div class="col-sm-5">
@@ -51,7 +81,9 @@
           <button class="btn btn-block btn-danger" (click)="borrarEquipo(equipo.id)">Borrar</button>
         </div>
         <div class="col-sm-12">
-          <a [routerLink]="[equipo.id,'jugador']">Ir a Jugadores</a>
+          <div class="form-group text-uppercase">
+            <a [routerLink]="[equipo.id,'jugador']">Ir a Jugadores</a>
+          </div>
         </div>
       </div>
       <div class="div" [hidden]="equipo.formularioCerrado">
@@ -60,10 +92,10 @@
             <div class="form-group">
               <label>Equipo</label>
               <div class="animated slideInUp" [hidden]="!nombre.errors">
-                <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre mínimo con 3 caracteres</span>
+                <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre y pais de mínimo con 5 caracteres</span>
               </div>
               <input required
-                     minlength="3"
+                     minlength="5"
                      type="text"
                      class="form-control"
                      placeholder="digite un nombre del equipo  como: Real Madrid"
@@ -72,13 +104,37 @@
                      #nombre="ngModel"
                      #nombreEle>
             </div>
+            <div class="form-group">
+              <label>Fecha de Creación</label>
+              <input required
+                     type="date"
+                     class="form-control"
+                     name="fechaCreacion"
+                     [(ngModel)]="equipo.fechaCreacion"
+                     #nombre="ngModel"
+                     #nombreEle>
+            </div>
+            <div class="form-group">
+              <label>Pais de residencia</label>
+              <!--<div class="animated slideInUp" [hidden]="!paisResidencia.errors">-->
+              <!--<span class="bg-primary " *ngIf="paisResidencia.errors && (paisResidencia.dirty || paisResidencia.touched)"> Ingrese un pais de  mínimo con 4 caracteres</span>-->
+              <!--</div>-->
+              <input required
+                     minlength="5"
+                     type="text"
+                     class="form-control"
+                     placeholder="Digite el pais de residencia del Equipo como: España"
+                     name="paisResidencia"
+                     [(ngModel)]="equipo.paisResidencia"
+                     #nombre="ngModel"
+                     #nombreEle>
+            </div>
             <button [disabled]="disabledButtons.NuevoEquipoFormSubmitButton ||!NuevoEquipoForm.valid" type="submit"
                     class="btn btn-block btn-success">Actualizar
             </button>
             <button type="button"
                     class="btn btn-block btn-warning"
-                    (click)="equipo.formularioCerrado=!formularioCerrado"
-            >Cancelar
+                    (click)="equipo.formularioCerrado=!formularioCerrado" [routerLink]="['/equipo']">Cancelar
             </button>
           </form>
         </form>

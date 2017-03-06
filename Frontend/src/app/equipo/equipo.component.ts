@@ -13,7 +13,7 @@ export class EquipoComponent implements OnInit {
   nuevoEquipo: any = {};
   Equipos = [];
   disabledButtons={
-    NuevaEquipoFormSubmitButton:false
+    NuevoEquipoFormSubmitButton:false
   };
   constructor(private _http: Http,
               private _masterURL:MasterUrlService) {
@@ -23,7 +23,6 @@ export class EquipoComponent implements OnInit {
     this._http.get(this._masterURL.url+"Equipo")
       .subscribe(
         (res:Response)=>{
-          console.log(res.json());
           this.Equipos=res.json().map((value)=>{
             value.formularioCerrado=true;
             return value;
@@ -35,23 +34,23 @@ export class EquipoComponent implements OnInit {
       )
   }
   crearEquipo(formulario:NgForm) {
-    this.disabledButtons.NuevaEquipoFormSubmitButton=true;
-    console.log(formulario);
-
-    this._http.post(this._masterURL.url + "Equipo", {
-      nombre: formulario.value.nombre
-    })
-    // .subscribe(respuesta => console.log("respuesta", respuesta));
+    this.disabledButtons.NuevoEquipoFormSubmitButton=true;
+    let nuevoEquipo={
+      nombre:formulario.value.nombre,
+      fechaCreacion:formulario.value.fechaCreacion,
+      paisResidencia:formulario.value.paisResidencia
+    };
+    this._http.post(this._masterURL.url + "Equipo", nuevoEquipo)
       .subscribe(
         (res)=>{
           console.log("No hubo Errores");
           console.log(res);
           this.Equipos.push(res.json());
           this.nuevoEquipo={};
-          this.disabledButtons.NuevaEquipoFormSubmitButton=false;
+          this.disabledButtons.NuevoEquipoFormSubmitButton=false;
         },
         (err)=>{
-          this.disabledButtons.NuevaEquipoFormSubmitButton=false;
+          this.disabledButtons.NuevoEquipoFormSubmitButton=false;
           console.log("Ocurrio un error",err);
         },
         ()=>{
@@ -63,8 +62,8 @@ export class EquipoComponent implements OnInit {
     this._http.delete(this._masterURL.url+"Equipo/" +id)
       .subscribe(
         (res)=>{
-          let equipoBorrada=res.json();
-          this.Equipos=this.Equipos.filter(value=>equipoBorrada.id!=value.id)
+          let equipoBorrado=res.json();
+          this.Equipos=this.Equipos.filter(value=>equipoBorrado.id!=value.id)
         },
         (err)=>{
           console.log(err);
@@ -77,7 +76,7 @@ export class EquipoComponent implements OnInit {
     };
     this._http.put(this._masterURL.url+"Equipo/"+equipo.id,parametros)
       .subscribe(
-        (res)=>{
+        (res: Response)=>{
           equipo.formularioCerrado=!equipo.formularioCerrado;
           console.log("Respuesta", res.json());
         },

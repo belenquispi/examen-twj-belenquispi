@@ -9,9 +9,7 @@ module.exports = {
 
   attributes: {
     idEquipo:{
-      model:'Equipo',
-      required:true,
-      defaultsTo: 'undefined'
+      model:'Equipo'
     }
   }
 };
