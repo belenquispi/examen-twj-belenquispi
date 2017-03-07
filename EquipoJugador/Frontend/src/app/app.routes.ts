@@ -9,8 +9,8 @@ import {JugadorComponent} from "./jugador/jugador.component";
 export const routes:Routes =[
   {path: '', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomeComponent},
-  {path:'equipo', component: EquipoComponent},
-  {path:'equipo/:idEquipo/jugador', component: JugadorComponent}
+  {path:'equipos', component: EquipoComponent},
+  {path:'equipos/:idEquipo/jugador', component: JugadorComponent}
 ];
 export const routing:ModuleWithProviders=RouterModule.forRoot(routes);
 

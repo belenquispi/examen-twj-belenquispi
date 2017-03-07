@@ -5,4 +5,4 @@
 ### Estudiante: `Belén Aracely Quispi Sotamba`
 ### Profesor: `Tania Calle - Adrian Eguez`
 ### Periodo: `2016B`
-### Relacion Asignada: `Equipo - Jugador`
+### Relación Asignada: `Equipo - Jugador`
