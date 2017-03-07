@@ -72,7 +72,9 @@ export class EquipoComponent implements OnInit {
   }
   actualizarEquipo(equipo:any){
     let parametros = {
-      nombre:equipo.nombre
+      nombre:equipo.nombre,
+      fechaCreacion:equipo.fechaCreacion,
+      paisResidencia:equipo.paisResidencia
     };
     this._http.put(this._masterURL.url+"Equipo/"+equipo.id,parametros)
       .subscribe(

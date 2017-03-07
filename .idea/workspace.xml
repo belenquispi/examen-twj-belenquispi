@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2918418-d76e-4ca3-ac37-37df9de46a66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts" afterPath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/equipo/equipo.component.ts" afterPath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/equipo/equipo.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master-url.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="master-url.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="37">
@@ -113,6 +112,18 @@
             <state relative-caret-position="4588">
               <caret line="124" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="equipo.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/equipo/equipo.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="75" column="41" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,6 +181,7 @@
         <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/equipo/equipo.component.html" />
         <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html" />
         <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts" />
+        <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/equipo/equipo.component.ts" />
       </list>
     </option>
   </component>
@@ -382,6 +394,36 @@
               <option name="myItemId" value="EquipoJugador" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EquipoJugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -488,12 +530,12 @@
       <workItem from="1488821156811" duration="1261000" />
       <workItem from="1488838996938" duration="16174000" />
       <workItem from="1488861275631" duration="1030000" />
-      <workItem from="1488863022835" duration="68000" />
+      <workItem from="1488863022835" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51111000" />
+    <option name="totallyTimeSpent" value="51774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -537,7 +579,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Backend/api/responses/serverError.js" />
     <entry file="file://$PROJECT_DIR$/Backend/config/env/development.js" />
     <entry file="file://$PROJECT_DIR$/Backend/config/env/production.js" />
     <entry file="file://$PROJECT_DIR$/Backend/config/locales/de.json" />
@@ -675,6 +716,16 @@
         <state relative-caret-position="37">
           <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/equipo/equipo.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="75" column="41" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
