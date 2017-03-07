@@ -98,34 +98,38 @@
             <form class="animated bounceIn" (ngSubmit)="actualizarEquipo(equipo)" #NuevoEquipoForm="ngForm">
               <div class="form-group">
                 <label>Equipo</label>
-                <div class="animated slideInUp" [hidden]="!nombre.errors">
-                  <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre y pais de mínimo con 5 caracteres</span>
+                <div *ngIf="nombre.errors">
+                  <span class="text-info" *ngIf="nombre.errors.required">Se require este campo</span>
+                  <span class="text-info" *ngIf="nombre.errors.minlength">Debe estar con mas de 5 caracteres</span>
                 </div>
                 <input required
                        minlength="5"
                        type="text"
                        class="form-control"
-                       placeholder="digite un nombre del equipo  como: Real Madrid"
+                       placeholder="Digite un nombre del equipo  como: Real Madrid"
                        name="nombre"
                        [(ngModel)]="equipo.nombre"
-                       #nombre="ngModel"
-                       #nombreEle>
+                       #nombre="ngModel">
               </div>
               <div class="form-group">
                 <label>Fecha de Creación</label>
+                <div *ngIf="fechaCreacion.errors">
+                  <span class="text-info" *ngIf="fechaCreacion.errors.required">Se require este campo</span>
+                </div>
                 <input required
                        type="date"
                        class="form-control"
                        name="fechaCreacion"
                        [(ngModel)]="equipo.fechaCreacion"
-                       #nombre="ngModel"
-                       #nombreEle>
+                       #fechaCreacion="ngModel">
               </div>
               <div class="form-group">
                 <label>Pais de residencia</label>
-                <!--<div class="animated slideInUp" [hidden]="!paisResidencia.errors">-->
-                <!--<span class="bg-primary " *ngIf="paisResidencia.errors && (paisResidencia.dirty || paisResidencia.touched)"> Ingrese un pais de  mínimo con 4 caracteres</span>-->
-                <!--</div>-->
+                <div *ngIf="paisResidencia.errors">
+                  <span class="text-info" *ngIf="paisResidencia.errors.required">Se require este campo</span>
+                  <span class="text-info"
+                        *ngIf="paisResidencia.errors.minlength">Debe estar con mas de 5 caracteres</span>
+                </div>
                 <input required
                        minlength="5"
                        type="text"
@@ -133,8 +137,8 @@
                        placeholder="Digite el pais de residencia del Equipo como: España"
                        name="paisResidencia"
                        [(ngModel)]="equipo.paisResidencia"
-                       #nombre="ngModel"
-                       #nombreEle>
+                       #paisResidencia="ngModel"
+                >
               </div>
               <button [disabled]="disabledButtons.NuevoEquipoFormSubmitButton ||!NuevoEquipoForm.valid" type="submit"
                       class="btn btn-block btn-success">Actualizar
