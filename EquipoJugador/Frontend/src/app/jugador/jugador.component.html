@@ -1,0 +1,146 @@
+<div class="container">
+  <h1 class="text-center text-info">Bienvenidos a Ingresar Jugadores </h1>
+  <div class="row">
+    <div class="col-sm-12">
+      <label>Vista Preliminar</label>
+      <pre class="animated fadeInUp">
+        {{nuevoJugador|json}}
+      </pre>
+    </div>
+    <div class="col-sm-6">
+      <form class="animated bounceIn" (ngSubmit)="crearJugador(NuevoJugadorForm)" #NuevoJugadorForm="ngForm">
+        <div class="form-group">
+          <label>Nombre del Jugador</label>
+          <div *ngIf="nombre.errors">
+            <span class="text-info" *ngIf="nombre.errors.required">Se require este campo</span>
+            <span class="text-info" *ngIf="nombre.errors.minlength">Debe estar con mas de 5 caracteres</span>
+          </div>
+          <input type="text"
+                 class="form-control"
+                 minlength="5"
+                 required
+                 placeholder="Digite un nombre del Jugador como: Leonel Messi"
+                 name="nombre"
+                 [(ngModel)]="nuevoJugador.nombre"
+                 #nombre="ngModel">
+        </div>
+        <div class="form-group">
+          <label>Fichado hasta</label>
+          <div *ngIf="fichadoHasta.errors">
+            <span class="text-info" *ngIf="fichadoHasta.errors.required">Se require este campo</span>
+          </div>
+          <input type="date"
+                 class="form-control"
+                 name="fichadoHasta"
+                 required
+                 [(ngModel)]="nuevoJugador.fichadoHasta"
+                 #fichadoHasta="ngModel"
+          >
+        </div>
+        <div class="form-group">
+          <label>Posición</label>
+          <div *ngIf="posicion.errors">
+            <span class="text-info" *ngIf="posicion.errors.required">Se require este campo</span>
+            <span class="text-info" *ngIf="posicion.errors.minlength">Debe estar con mas de 5 caracteres</span>
+          </div>
+          <input type="text"
+                 class="form-control"
+                 name="posicion"
+                 required
+                 minlength="5"
+                 placeholder="Digite la posición del jugador como: Delantero"
+                 [(ngModel)]="nuevoJugador.posicion"
+                 #posicion="ngModel"
+          >
+        </div>
+        <button [disabled]="disabledButtons.NuevoJugadorFormSubmitButton ||!NuevoJugadorForm.valid" type="submit"
+                class="btn btn-block btn-success">Crear Jugador
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-6 text-center">
+      <h1 class="text-center text-info">{{nuevoJugador.nombre}}</h1>
+      <h3>{{nuevoJugador.fichadoHasta}}</h3>
+      <h3>{{nuevoJugador.posicion}}</h3>
+    </div>
+  </div>
+  <br>
+  <div class="row ">
+    <div class="col-sm-12 animated fadeInLeft table-bordered" *ngFor="let jugador of jugadores">
+      <div class="col-sm-6">
+        <div class="text-center">
+          <h3 class="text-center text-info">{{jugador.nombre}}</h3>
+          <p>ID:{{jugador.id}}</p>
+          <p>Fichado hasta:{{jugador.fichadoHasta}}</p>
+          <p>Posición :{{jugador.posicion}}</p>
+        </div>
+      </div>
+      <div class="col-sm-6 ">
+        <div class="row animated fadeInRight" style="margin-top:50px" [hidden]="!jugador.formularioCerrado">
+          <div class="col-sm-5">
+            <button class="btn btn-block btn-info" (click)="jugador.formularioCerrado=!jugador.formularioCerrado">
+              Actualizar
+            </button>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-5">
+            <button class="btn btn-block btn-danger" (click)="borrarJugador(jugador.id)">Borrar</button>
+          </div>
+        </div>
+        <div class="div" style="margin-top:10px; margin-bottom:20px;" [hidden]="jugador.formularioCerrado">
+          <form action="">
+            <form class="animated bounceIn" (ngSubmit)="actualizarJugador(jugador)" #NuevoJugadorForm="ngForm">
+              <div class="form-group">
+                <label>Jugador</label>
+                <div class="animated slideInUp" [hidden]="!nombre.errors">
+                  <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre mínimo con 3 caracteres</span>
+                </div>
+                <input required
+                       minlength="3"
+                       type="text"
+                       class="form-control"
+                       placeholder="digite un nombre del jugador  como: Leonel Mesí"
+                       name="nombre"
+                       [(ngModel)]="jugador.nombre"
+                       #nombre="ngModel">
+              </div>
+              <div class="form-group">
+                <label>Fichado hasta</label>
+                <input required
+                       type="date"
+                       class="form-control"
+                       name="fichadoHasta"
+                       [(ngModel)]="jugador.fichadoHasta"
+                       #fichadoHasta="ngModel"
+                >
+              </div>
+              <div class="form-group">
+                <label>Posición</label>
+                <!--<div class="animated slideInUp" [hidden]="!nombre.errors">-->
+                <!--<span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese una posición mínimo con 5 caracteres</span>-->
+                <!--</div>-->
+                <input required
+                       minlength="5"
+                       type="text"
+                       class="form-control"
+                       placeholder="Digite la posición del jugador  como: Delantero"
+                       name="posicion"
+                       [(ngModel)]="jugador.posicion"
+                       #posicion="ngModel"
+                >
+              </div>
+              <button [disabled]="disabledButtons.NuevoJugadorFormSubmitButton ||!NuevoJugadorForm.valid" type="submit"
+                      class="btn btn-block btn-success">Actualizar
+              </button>
+              <button type="button"
+                      class="btn btn-block btn-warning"
+                      (click)="jugador.formularioCerrado=!formularioCerrado"
+              >Cancelar
+              </button>
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
