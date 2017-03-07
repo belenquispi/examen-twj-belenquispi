@@ -18,8 +18,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var MasterUrlService = (function () {
     function MasterUrlService() {
-        this._url = "http://localhost:1337/";
-        // this._url="https://ide.c9.io/belenquispi/examen-twj-quispibelen";
+        //this._url="http://localhost:1337/";
+        this._url = "https://examen-twj-belenquispi-belenquispi.c9users.io/";
     }
     Object.defineProperty(MasterUrlService.prototype, "url", {
         get: function () {
@@ -444,8 +444,8 @@ var AppModule = (function () {
 var routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_1__home_home_component__["a" /* HomeComponent */] },
-    { path: 'equipo', component: __WEBPACK_IMPORTED_MODULE_2__equipo_equipo_component__["a" /* EquipoComponent */] },
-    { path: 'equipo/:idEquipo/jugador', component: __WEBPACK_IMPORTED_MODULE_3__jugador_jugador_component__["a" /* JugadorComponent */] }
+    { path: 'equipos', component: __WEBPACK_IMPORTED_MODULE_2__equipo_equipo_component__["a" /* EquipoComponent */] },
+    { path: 'equipos/:idEquipo/jugador', component: __WEBPACK_IMPORTED_MODULE_3__jugador_jugador_component__["a" /* JugadorComponent */] }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
 //# sourceMappingURL=app.routes.js.map
@@ -543,7 +543,7 @@ module.exports = module.exports.toString();
 /***/ 515:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n    <ul class=\"nav navbar-nav\">\n      <li><a class=\"navbar-brand\" [routerLink]=\"['/home']\">Home</a></li>\n      <li><a class=\"navbar-brand\" [routerLink]=\"['/equipo']\">Equipo</a></li>\n    </ul>\n</nav>\n<router-outlet></router-outlet>\n"
+module.exports = "<nav class=\"navbar navbar-inverse\">\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a class=\"navbar-brand\" [routerLink]=\"['/home']\">Home</a></li>\r\n      <li><a class=\"navbar-brand\" [routerLink]=\"['/equipos']\">Equipos</a></li>\r\n    </ul>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -557,7 +557,7 @@ module.exports = "<div class=\"container\">\n  <h1 class=\"text-center text-info
 /***/ 517:
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"text-center text-info\">Bienvenidos al Sistema de Registro de Equipos </h1>\n<div row>\n  <div class=\"col-sm-2\"></div>\n  <div class=\"jumbotron col-sm-8 text-center\" style=\"background:#D8F6CE\">\n    <h1>Equipos</h1>\n    <p>Gestionar los equipos del sistema</p>\n    <p>\n      <a class=\"btn btn-primary btn-lg\" [routerLink]=\"['/equipo']\" role=\"button\">Crear Equipos</a>\n    </p>\n  </div>\n  <div class=\"col-sm-2\"></div>\n</div>\n"
+module.exports = "<h1 class=\"text-center text-info\">Bienvenidos al Sistema de Registro de Equipos </h1>\r\n<div row>\r\n  <div class=\"col-sm-2\"></div>\r\n  <div class=\"jumbotron col-sm-8 text-center\" style=\"background:#D8F6CE\">\r\n    <h1>Equipos</h1>\r\n    <p>Gestionar los equipos del sistema</p>\r\n    <p>\r\n      <a class=\"btn btn-primary btn-lg\" [routerLink]=\"['/equipos']\" role=\"button\">Crear Equipos</a>\r\n    </p>\r\n  </div>\r\n  <div class=\"col-sm-2\"></div>\r\n</div>\r\n"
 
 /***/ }),
 
