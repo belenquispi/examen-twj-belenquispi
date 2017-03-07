@@ -13,6 +13,7 @@ export class JugadorComponent implements OnInit {
   private _parametros;
   jugadores = [];
   nuevoJugador = {};
+  jugadorAntiguo = this.nuevoJugador;
   disabledButtons = {
     NuevoJugadorFormSubmitButton: false
   };
@@ -83,6 +84,7 @@ export class JugadorComponent implements OnInit {
     let parametos = {
       nombre: jugador.nombre,
       fichadoHasta: jugador.fichadoHasta,
+      posicion: jugador.posicion,
       idEquipo: this._parametros.idEquipo
     };
     this._http.put(this._masterURL.url + "Jugador/" + jugador.id, parametos)
@@ -96,5 +98,4 @@ export class JugadorComponent implements OnInit {
         }
       )
   }
-
 }

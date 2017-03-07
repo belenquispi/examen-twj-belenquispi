@@ -2,145 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2918418-d76e-4ca3-ac37-37df9de46a66" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/.sailsrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/controllers/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/controllers/EquipoController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/controllers/JugadorController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/models/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/models/Equipo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/models/Jugador.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/policies/sessionAuth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/responses/badRequest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/responses/created.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/responses/forbidden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/responses/notFound.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/responses/ok.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/responses/serverError.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/api/services/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/assets/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/assets/images/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/assets/js/dependencies/sails.io.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/assets/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/assets/styles/importer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/assets/templates/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/blueprints.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/connections.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/cors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/csrf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/env/development.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/env/production.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/globals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/i18n.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/locales/_README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/locales/de.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/locales/en.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/locales/es.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/locales/fr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/log.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/models.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/policies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/session.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/sockets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/config/views.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/clean.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/coffee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/copy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/cssmin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/jst.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/less.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/sails-linker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/sync.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/uglify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/config/watch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/pipeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/buildProd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/compileAssets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/linkAssets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/linkAssetsBuild.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/linkAssetsBuildProd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/tasks/register/syncAssets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/views/403.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/views/404.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/views/500.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/views/homepage.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backend/views/layout.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/app.routes.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/equipo/equipo.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/equipo/equipo.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/equipo/equipo.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/equipo/equipo.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/home/home.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/home/home.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/home/home.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/home/home.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/jugador/jugador.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/jugador/jugador.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/jugador/jugador.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/jugador/jugador.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/services/master-url.service.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/app/services/master-url.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/bootstrap-3.3.7-dist/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/assets/jquery-3.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend/tslint.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.html" afterPath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html" afterPath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.ts" afterPath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts" afterPath="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -171,40 +37,44 @@
       <file leaf-file-name="jugador.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jugador.component.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2424">
+              <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
               <folding>
-                <element signature="e#0#73#0" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#form#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#form#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#form#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.ts">
+      <file leaf-file-name="jugador.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2448">
+              <caret line="99" column="3" lean-forward="false" selection-start-line="99" selection-start-column="3" selection-end-line="99" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#JugadorComponent#0" expanded="false" />
+                <element signature="n#!!block;n#ngOnInit#0;n#JugadorComponent#0" expanded="false" />
+                <element signature="e#1015#1208#0" expanded="false" />
+                <element signature="e#1231#1277#0" expanded="false" />
+                <element signature="n#!!block;n#borrarJugador#0;n#JugadorComponent#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.html">
+      <file leaf-file-name="master-url.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="333">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -225,6 +95,7 @@
       <find>nombre</find>
       <find>equipo</find>
       <find>equi</find>
+      <find>nuevoJugador</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -257,6 +128,9 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/jugador/jugador.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/equipo/equipo.component.html" />
         <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html" />
+        <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.ts" />
+        <option value="$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts" />
       </list>
     </option>
   </component>
@@ -318,6 +192,136 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EquipoJugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EquipoJugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EquipoJugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EquipoJugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examen-twj-belenquispi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EquipoJugador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,12 +432,12 @@
       <workItem from="1488746599866" duration="24707000" />
       <workItem from="1488778225820" duration="7871000" />
       <workItem from="1488821156811" duration="1261000" />
-      <workItem from="1488838996938" duration="7458000" />
+      <workItem from="1488838996938" duration="12339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41297000" />
+    <option name="totallyTimeSpent" value="46178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -472,32 +476,11 @@
           <line>58</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Backend/api/controllers/JugadorController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-328">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/api/models/Equipo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/api/models/Jugador.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/api/policies/sessionAuth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-848">
@@ -818,10 +801,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html">
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Backend/api/models/Equipo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -831,23 +830,47 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2424">
+          <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/jugador/jugador.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="2448">
+          <caret line="99" column="3" lean-forward="false" selection-start-line="99" selection-start-column="3" selection-end-line="99" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#JugadorComponent#0" expanded="false" />
+            <element signature="n#!!block;n#ngOnInit#0;n#JugadorComponent#0" expanded="false" />
+            <element signature="e#1015#1208#0" expanded="false" />
+            <element signature="e#1231#1277#0" expanded="false" />
+            <element signature="n#!!block;n#borrarJugador#0;n#JugadorComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/Frontend/src/app/services/master-url.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>

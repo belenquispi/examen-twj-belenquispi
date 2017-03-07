@@ -13,11 +13,11 @@
           <label>Nombre del Jugador</label>
           <div *ngIf="nombre.errors">
             <span class="text-info" *ngIf="nombre.errors.required">Se require este campo</span>
-            <span class="text-info" *ngIf="nombre.errors.minlength">Debe estar con mas de 5 caracteres</span>
+            <span class="text-info" *ngIf="nombre.errors.minlength">Debe estar con mas de 4 caracteres</span>
           </div>
           <input type="text"
                  class="form-control"
-                 minlength="5"
+                 minlength="4"
                  required
                  placeholder="Digite un nombre del Jugador como: Leonel Messi"
                  name="nombre"
@@ -34,8 +34,7 @@
                  name="fichadoHasta"
                  required
                  [(ngModel)]="nuevoJugador.fichadoHasta"
-                 #fichadoHasta="ngModel"
-          >
+                 #fichadoHasta="ngModel">
         </div>
         <div class="form-group">
           <label>Posición</label>
@@ -50,8 +49,7 @@
                  minlength="5"
                  placeholder="Digite la posición del jugador como: Delantero"
                  [(ngModel)]="nuevoJugador.posicion"
-                 #posicion="ngModel"
-          >
+                 #posicion="ngModel">
         </div>
         <button [disabled]="disabledButtons.NuevoJugadorFormSubmitButton ||!NuevoJugadorForm.valid" type="submit"
                 class="btn btn-block btn-success">Crear Jugador
@@ -92,20 +90,24 @@
             <form class="animated bounceIn" (ngSubmit)="actualizarJugador(jugador)" #NuevoJugadorForm="ngForm">
               <div class="form-group">
                 <label>Jugador</label>
-                <div class="animated slideInUp" [hidden]="!nombre.errors">
-                  <span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese un nombre mínimo con 3 caracteres</span>
+                <div *ngIf="nombre.errors">
+                  <span class="text-info" *ngIf="nombre.errors.required">Se require este campo</span>
+                  <span class="text-info" *ngIf="nombre.errors.minlength">Debe estar con mas de 4 caracteres</span>
                 </div>
                 <input required
-                       minlength="3"
+                       minlength="4"
                        type="text"
                        class="form-control"
-                       placeholder="digite un nombre del jugador  como: Leonel Mesí"
+                       placeholder="Digite un nombre del jugador  como: Leonel Mesí"
                        name="nombre"
                        [(ngModel)]="jugador.nombre"
                        #nombre="ngModel">
               </div>
               <div class="form-group">
                 <label>Fichado hasta</label>
+                <div *ngIf="fichadoHasta.errors">
+                  <span class="text-info" *ngIf="fichadoHasta.errors.required">Se require este campo</span>
+                </div>
                 <input required
                        type="date"
                        class="form-control"
@@ -116,9 +118,10 @@
               </div>
               <div class="form-group">
                 <label>Posición</label>
-                <!--<div class="animated slideInUp" [hidden]="!nombre.errors">-->
-                <!--<span class="bg-primary " *ngIf="nombre.errors && (nombre.dirty || nombre.touched)"> Ingrese una posición mínimo con 5 caracteres</span>-->
-                <!--</div>-->
+                <div *ngIf="posicion.errors">
+                  <span class="text-info" *ngIf="posicion.errors.required">Se require este campo</span>
+                  <span class="text-info" *ngIf="posicion.errors.minlength">Debe estar con mas de 5 caracteres</span>
+                </div>
                 <input required
                        minlength="5"
                        type="text"
@@ -134,8 +137,8 @@
               </button>
               <button type="button"
                       class="btn btn-block btn-warning"
-                      (click)="jugador.formularioCerrado=!formularioCerrado"
-              >Cancelar
+                      (click)="jugador.formularioCerrado=!formularioCerrado">
+                Cancelar
               </button>
             </form>
           </form>
